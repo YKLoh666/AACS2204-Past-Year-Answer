@@ -10,6 +10,7 @@ Any extra code or explanation related to the question will have its file within 
 ## Table of Contents
 
 - [2024-MAY](2024-MAY/answer.md)
+- [2024-JAN](2024-JAN/answer.md)
 
 ## Contribution method
 
