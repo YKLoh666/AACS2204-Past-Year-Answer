@@ -50,13 +50,13 @@ Different package, non-subclass | Visible | Not Visible | Not Visible | Not Visi
 
 b)
 
-- Method Matching
-  - Being used in **Compile-Time Polymorphism**, or method overloading. The **declared class type of the referenced variable** decides which method to execute at compile-time.
-  - The method is matched by the same name, the same number of formal parameters, and the same type of formal parameter in order.
-- Method Binding
-  - Being used in **Runtime Polymorphism**, or method overriding. The **actual class of the object referenced by the variable** decides which method to execute at runtime.
-  - The method is found dynamically by Java Virtual Machine (JVM), from the actual class up to the referenced class type, to find the matching method signature.
- 
+Method Matching | Method Binding
+-|-
+Used by method overloading | Used by method binding
+Decide method implementation to use at compile time | Method implementation is binded at runtime
+Class type of the reference variable decides the method implementation to use | Actual class of the referenced object decides the method implementation to use
+Match with method header, which consists of the method name and parameter list (data type, order and number of parameters) | Match with method signature
+
 c) 
 
 - The entities involved in the problem case are identified. Those entities are the ones who contribute to the solution.
