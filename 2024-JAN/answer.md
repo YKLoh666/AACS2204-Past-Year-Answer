@@ -210,7 +210,7 @@ c)
 
 Abstract class | Interface
 -|-
-A class that cannot create instance classes, are to be extended by the subclasses, have general states and behaviour that shares among subclasses | A contract that is to be implemented by the subclasses, specifying the behaviour a class should have 
+Class to generalise the methods with the same purpose and have the subclasses to override it with a more specific business logic implementation | A contract to enforce behaviours onto the implemented classes. 
 Has variables | Has no variable
 Can have constructor, but cannot be used to instantiate object itself, are to be invoked by the subclasses with `super()` | Cannot have constructor, thus cannot instantiate objects with it
 Have concrete methods and abstract methods(no implementation), and abstract method needs to be override by its subclass, cannot be `private` | All methods have no implementation, as it is used to enforce the implementations to define the methods listed.
