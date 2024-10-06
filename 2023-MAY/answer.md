@@ -11,7 +11,29 @@
 
 ### Question 1
 
-- still cooking
+a)
+
+- Object-oriented programming has data and methods coupled into classes instead of separating them. This approach allows the methods to act on the same data, as they will be reused as a whole class, encouraging modularity. In procedural programming, the functions consume data through passing arguments, which leads to difficulty in development because have to ensure correct data are passed into the functions.
+
+- Object-oriented programming supports inheritance and polymorphism, which encourages module reusability and extensibility. In procedural programming, the functions often need to be rewritten or duplicated due to the introduction of new data types and changes.
+
+- Object-oriented programming encourages encapsulation, whereby the data and methods are encapsulated in each module. This can help data avoid unintentional tampering and allow only the method within the class to act on the data. In procedural programming, the data are shared among functions through argument passing or global declaration. The programmer has no clear control over the data, and it causes the data easily to be tampered with and cause unexpected behaviour.
+
+b)
+
+- The entities involved in solving the problem are recognised. The entities often mirror the real-world object thus the solution can be easily conceptualised.
+- The data and the operations acted on the data for each entity are recognised. This makes the entities capable of simulating their real-world states and behaviours, enabling them to carry out tasks.
+- The relationships among the entities are recognised. This allows the entities to interact with each other to carry out complex tasks, which can eventually solve the problem.
+
+c)
+
+- The classes are blueprints to create objects. It models the states and behaviours that need to be enforced on the object.
+- The objects are concrete/physical representations of the classes. Each of them has its own set of states and can be modified by invoking the behaviour.
+
+d)
+
+- Methods abstract the instructions to carry out a task. The information is hidden from the user, and the user only needs to know how to use it, instead of how it works.
+- The method groups reusable units of instructions, which encourages reusability, leading to better maintainability.
 
 ### Question 2
 
