@@ -156,18 +156,18 @@ v) It shows one class ***can*** do a specific operation in the interface. On the
 
 ![Interface](Q3a5.png)
 
-b) An object that its content is not modifiable upon its instantiation. The immutable class has 3 criteria
+b) An object whose content is not modifiable upon its instantiation. The immutable class has 3 criteria
   - The class data are all private
   - The class has no mutator methods
-  - The class has no accessor methods that return a reference to mutable data field object
+  - The class has no accessor methods that return a reference to a mutable data field object
 
-> Clarification to the third point
+> Clarification of the third point
 >
-> If a class getter return a non-primitive mutable object, the object can be modify by its own setter, making the class that owns this mutable object have its content changed too. Hence, we cannot have getter for non primitive objects so the content within the immutable class is truly absolute.
+> If a class getter returns a non-primitive mutable object, the object can be modified by its setter, making the class that owns this mutable object have its content changed too. Hence, we cannot have a getter for non-primitive objects so the content within the immutable class is truly absolute.
 
 ### Question 4
 
-a) String variable is the reference variable in stack memory, which points to the String object in the heap memory. The String object have its value point to the one within the String pool, which is a storage of every strings created. The String pool ensure that the String object that have the same content will point to the same value within the pool, which can reduce duplication and increase program efficiency.
+a) String variable is the reference variable in stack memory, which points to the String object in the heap memory. The String object has its value referencing the one within the String pool, which is a storage for every string value created. The String pool ensures that the String objects that have the same content will reference the same value within the pool, which can reduce duplication and increase program efficiency.
 
 ![String diagram](Q4a.png)
 
@@ -175,14 +175,14 @@ b)
 
 Public | Protected | Package (Default) | Private
 -|-|-|-
-Accessible by all classes | Accessible by classes from same package or subclasses only | Accessible by classes from same package only | Accessible from within the class only
+Accessible by all classes | Accessible by classes from the same package or subclasses only | Accessible by classes from the same package only | Accessible from within the class only
 
 c)
 
-- Encapsulation: A practice of wrapping all data and methods that act upon the data into single unit/module/class. This reduces the scope of the data to only the methods within the class, which can avoid data tampering which leads to unintentional behaviour. 
+- Encapsulation: A practice of wrapping all data and methods that act upon the data into a single unit/module/class. This reduces the scope of the data to only the methods within the class, which can avoid data tampering which leads to unintentional behaviour. 
 
-- Inheritance: A practice to use a general class to create classes. The general class contains general data and behaviour that shares among subclasses, and each subclasses can possess more specific states and behaviour. This can reduce code duplication and draw the hierarchical relationship among the classes, improving readability and maintainability.
+- Inheritance: A practice to use a general class to create classes. The general class contains general data and behaviours that are shared among subclasses, and each subclass can possess more specific states and behaviours. This can reduce code duplication and draw the hierarchical relationship among the classes, improving readability and maintainability.
 
-- Polymorphism: A practice to use the same expression to invoke different operation. This allows the module to be easily extended without much modification, at the same time enhance reusability which lead to better maintainability.
+- Polymorphism: A practice of using the same expression to invoke different operations. This allows the module to be easily extended without much modification and, at the same time enhances reusability which leads to better maintainability.
 
-d) Used to call the superclass methods, including constructor. It can also distinguish the method from subclass and the overrided method from superclass.
+d) Used to call the superclass methods, including the constructor. It can also distinguish the method from the subclass and the overridden method from the superclass.
