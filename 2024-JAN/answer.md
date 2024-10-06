@@ -54,8 +54,8 @@ Method Matching | Method Binding
 -|-
 Used by method overloading | Used by method binding
 Decide method implementation to use at compile time | Method implementation is binded at runtime
-Class type of the reference variable decides the method implementation to use | Actual class of the referenced object decides the method implementation to use
-Match with method header, which consists of the method name and parameter list (data type, order and number of parameters) | Match with method signature
+The class type of the reference variable decides the method implementation to use | Actual class of the referenced object decides the method implementation to use
+The method is decided by matching the overloaded method signature within a class family | The method is decided by matching the overriding method signature from the actual class up to the parent class hierarchically.
 
 c) 
 
