@@ -227,7 +227,7 @@ public class FullTimeTutor {
 
 d)
 
-```
+```java
 public class MainClass {
   public static void main(String[] args) {
     Object[] tutors = new Object[]{
