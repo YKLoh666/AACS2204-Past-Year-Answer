@@ -1,0 +1,145 @@
+1.
+a.Encapsulation - the process of hiding the data variables and methods from the user. using the private access modifier 
+  Inheritance - the process of making new classes from a singular general class.
+  Polymorphism - the inherited class can have many different forms or behaviors in its sub classes, example: Superclass [] = new Superclass();
+
+b. Differences between OOD and PPP
+OOD - Uses objects to represent and perform operations
+    - Has 3 principles, encapsulation, inheritance and polymorphism
+    - less complex - not needed long lines of code to perform a function
+
+PPP- Focuses on functions and structures of program
+   - Very complex, long lines of code necessary to do a function
+   - Divided into 2 subcategories, modular programming and stuctural programming
+c. Class and Object in OOD
+
+Class - a template that stores data properties and methods of a program
+
+Object - a representive real-world entity that is a instance of a class and has its own data properites and behaviors.
+
+2. (i). Method overloading. The methods possess the same name but different data type and different passing parameters. The first method returns integer values, and the second returns double values. The parameters
+are overloaded by methods calling each other. 
+(ii). At line 6, will display 10,20.- as the a and b of the 1st method is initialised
+
+(iii), Use of priority. The higher data type in the list of preference is called then followed by the other  data types down the list. 
+//Please help with question2 thanks
+
+3. a. public class Book{
+        private String id,title;
+        private double price;
+        private static int totalNumberofBook;
+    public Book(){
+      this("","",0.00);
+      totalNumberofBook++;
+    }
+    public Book(String id, String title,double price){
+      this.id = id;
+       this.title = title;
+      this.price = price;
+    }
+    public String getid(){
+         return id;
+    } 
+   public String gettitle(){
+         return title;
+   }
+   public double getprice(){
+      return price;
+   }
+   public int gettotalNumberofBooks(){
+       return totalNumberofBook;
+   }
+  public String setid(String id){
+      this.id = id;
+  }
+  public String settitle(String title){
+   this.title = title;
+  }
+  public double setprice(double price){
+    this.price = price;
+  }
+  public int settotalNumberofBook(int totalNumberofBook){
+    Book.totalNumberofBook = totalNumberofBook;
+}
+public String toString(){
+   return String.format("%-8s %-8s %-7.2lf\n",id,title,price);
+}
+} 
+//question 3a
+//Question 3b
+public class TestBook{
+   public static void main(String[] args){
+         Book b1 = new Book();
+         Book b2 = new Book("A1235", "The GIRL on the Train",59.90);
+
+        System.out.println("Id :\n"+"Title :\n"+"Price : \n"+ b1.toString() );
+        System.out.println("Id :\n"+"Title :\n"+"Price : \n"+ b2.toString());
+        System.out.println("Total Number of Book:" + Book.getTotalNumberofBook());
+   }
+}
+
+//Question 4
+4. //note error is here that INCLUDES GETTER/SETTER - if it says exclude- dont provide: which makes no sense for Q4C BUT follow the question :/
+a.   
+public class Account {
+   private int accountNumber;
+   private double balance;
+   private double amount;
+public Account(){
+  this(0,0.00);
+}
+public Account(int accountNumber, double balance){
+      this.accountNumber = accountNumber;
+       this.balance = balance;
+}
+public double deposit(int amount){
+    deposit = balance + amount;     
+    return deposit;
+}
+public double withdrawl(int amount){
+    withdrawl = balance - amount;
+    return withdrawl;
+}
+
+public String toString(){
+   return("Account:"+accountNumber+"Balance :"+balance);
+}
+}
+b. //Subclass
+
+public class CheckingAccount extends Account{
+    private static double transactionFee = 5.0;
+ 
+public CheckingAccount(String accountNumber, double balance){
+ super(accountNumber, balance);
+}
+public double deductTransactionFee(){
+   transactionFees = transactionFee - balance;
+   return transactionFees;
+}
+public String toString(){
+
+return super.toString()+ "\n transaction fee: \n"+ deductTransactionFee();
+}
+
+}
+
+c. public class TestAccounts{
+     public static void main(String [] args){
+       SavingsAccount sa = new SavingsAccount("S1234",5000.00);
+ 
+System.out.println("----------TEST SAVINGS ACCOUNT----------");
+        sa.deposit(50.00);
+        System.out.println("Transaction : Deposit RM"+ sa.getdeposit());
+        System.out.println("Updated balance : RM" + sa.getBalance());
+
+        	System.out.println("Add interest into balance" + sa.addInterest());
+
+System.out.println("Final balance ="+ sa.getBalance());
+
+    	System.out.println(sa.toString());
+
+
+     }
+}
+//This will need a bit of helping in check its correctness
