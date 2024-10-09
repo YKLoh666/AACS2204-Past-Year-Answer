@@ -167,7 +167,7 @@ b) An object whose content is not modifiable upon its instantiation. The immutab
 
 ### Question 4
 
-a) String variable is the reference variable in stack memory, which points to the String object in the heap memory. The String object has its value referencing the one within the String pool, which is a storage for every string value created. The String pool ensures that the String objects that have the same content will reference the same value within the pool, which can reduce duplication and increase program efficiency.
+a) String variable is the reference variable in stack memory, which points to the value in a String pool, storage for every string value created. The String pool ensures that the String objects that have the same content will reference the same value within the pool, which can reduce duplication and increase program efficiency.
 
 ![String diagram](Q4a.png)
 
