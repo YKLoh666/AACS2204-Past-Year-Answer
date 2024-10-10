@@ -1,6 +1,6 @@
 # AACS2204 OCT 2023 Answers
 
-[Link to the paper](https://eprints.tarc.edu.my/26841/1/AACS2204.pdf×)
+[Link to the paper](https://eprints.tarc.edu.my/26841/1/AACS2204.pdf)
 
 Credit: [OldManDoug](https://github.com/OldManDoug)
 
